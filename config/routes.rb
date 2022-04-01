@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :customers
   resources :games
   resources :consoles
   root 'home#index'
