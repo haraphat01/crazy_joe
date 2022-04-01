@@ -15,7 +15,7 @@ class CustomersTest < ApplicationSystemTestCase
     click_on "New customer"
 
     fill_in "Address", with: @customer.address
-    fill_in "Name", with: @customer.name
+    fill_in "Customer name", with: @customer.customer_name
     fill_in "Phone", with: @customer.phone
     fill_in "Store name", with: @customer.store_name
     click_on "Create Customer"
@@ -29,7 +29,7 @@ class CustomersTest < ApplicationSystemTestCase
     click_on "Edit this customer", match: :first
 
     fill_in "Address", with: @customer.address
-    fill_in "Name", with: @customer.name
+    fill_in "Customer name", with: @customer.customer_name
     fill_in "Phone", with: @customer.phone
     fill_in "Store name", with: @customer.store_name
     click_on "Update Customer"
