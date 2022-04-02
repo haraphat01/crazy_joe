@@ -29,6 +29,7 @@ gem "jbuilder"
 gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
 gem 'hirb', '~> 0.7.3'
 
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
