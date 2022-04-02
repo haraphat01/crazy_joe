@@ -1,22 +1,30 @@
-<div id="<%= dom_id game %>">
-  <p>
-    <strong>Name:</strong>
-    <%= game.name %>
-  </p>
 
-  <p>
-    <strong>Age:</strong>
-    <%= game.age %>
-  </p>
+<div class="card" style="width: 18rem;"  id="<%= dom_id game %>">
+ 
+  <%= image_tag game.image %>
+  
+  <div class="card-body">
 
-  <p>
-    <strong>Stock:</strong>
-    <%= game.stock %>
-  </p>
+     <p>
+        <strong>Name:</strong>
+         <%= game.name %>
+        
+    </p>
+    <p>
+        <strong>Age:</strong>
+        <%= game.age %>
+    </p>
 
-  <p>
-    <strong>Price:</strong>
-    <%= game.price %>
-  </p>
+    <p>
+        <strong>Stock:</strong>
+        <%= game.stock %>
+    </p>
 
+     <p>
+        <strong>Price:</strong>
+        <%= game.price %>
+    </p>
+    
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
 </div>

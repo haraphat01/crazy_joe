@@ -1,5 +1,5 @@
 class Game < ApplicationRecord
-    validates :name, :age, :price, :stock, presence: true
-    belongs_to :customer
+    validates :name, :age, :price, :stock, :image, presence: true
+    
     has_one_attached :image
 end
