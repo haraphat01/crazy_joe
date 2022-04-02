@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_04_02_091242) do
+ActiveRecord::Schema[7.0].define(version: 2022_04_02_101439) do
   create_table "consoles", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "name"
     t.string "manufacturer"
@@ -29,6 +29,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_04_02_091242) do
     t.string "phone"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "game_id"
   end
 
   create_table "games", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
@@ -38,7 +39,16 @@ ActiveRecord::Schema[7.0].define(version: 2022_04_02_091242) do
     t.integer "price"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "sales", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.integer "customer_id"
+    t.string "copies"
+    t.integer "game_id"
+    t.string "date"
+    t.string "margin"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end
