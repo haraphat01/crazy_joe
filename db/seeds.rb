@@ -15,26 +15,24 @@
      
 # end
 
-20.times do
-    name = Faker::Name.name
-    manufacturer = Faker::University.name
-    colour = Faker::Color.color_name
-    price = Faker::Number.decimal_part(digits: 3)
-    status = "PAL"  
-    stock = Faker::Number.decimal_part(digits: 3) 
-    Console.create(name: name, manufacturer: manufacturer,  colour:  colour, price: price, status: status, stock: stock)
+# 20.times do
+#     name = Faker::Name.name
+#     manufacturer = Faker::University.name
+#     colour = Faker::Color.color_name
+#     price = Faker::Number.decimal_part(digits: 3)
+#     status = "PAL"  
+#     stock = Faker::Number.decimal_part(digits: 3) 
+#     Console.create(name: name, manufacturer: manufacturer,  colour:  colour, price: price, status: status, stock: stock)
 
      
-end
+# end
+
+
 
 20.times do
     name = Faker::Name.name
-    manufacturer = Faker::University.name
-    colour = Faker::Color.color_name
-    price = Faker::Number.decimal_part(digits: 3)
-    status = "PAL"  
-    stock = Faker::Number.decimal_part(digits: 3) 
-    Console.create(name: name, manufacturer: manufacturer,  colour:  colour, price: price, status: status, stock: stock)
-
-     
+    store = Faker::Bank.name
+    address = Faker::Address.street_address
+    phone = Faker::PhoneNumber.cell_phone_in_e164
+    Customer.create(customer_name: name, store_name: store,  address:  address, phone: phone)     
 end
