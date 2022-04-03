@@ -1,9 +1,9 @@
 
-<div class="card" style="width: 18rem;"  id="<%= dom_id game %>">
+<div class="card " style="width: 18rem;"  id="<%= dom_id game %>">
  
-  <%= image_tag game.image %>
+  <%= image_tag game.image, class: 'card-img-top' %>
   
-  <div class="card-body">
+  <div class="card-body ">
 
      <p>
         <strong>Name:</strong>
@@ -25,6 +25,7 @@
         <%= game.price %>
     </p>
     
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    
+    <%=  link_to "Check this game", game, class: 'btn btn-primary' %>
   </div>
 </div>

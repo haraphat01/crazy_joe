@@ -2,14 +2,14 @@
 
 one:
   customer_id: 1
-  copies: MyString
+  copy: 1
   game_id: 1
   date: MyString
-  margin: MyString
+  margin: 1
 
 two:
   customer_id: 1
-  copies: MyString
+  copy: 1
   game_id: 1
   date: MyString
-  margin: MyString
+  margin: 1

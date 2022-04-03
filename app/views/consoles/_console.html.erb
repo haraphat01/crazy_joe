@@ -1,32 +1,34 @@
-<div id="<%= dom_id console %>">
-  <p>
-    <strong>Name:</strong>
-    <%= console.name %>
-  </p>
+<div  class="card " style="width: 18rem;"  id="<%= dom_id console %>">
 
-  <p>
-    <strong>Manufacturer:</strong>
-    <%= console.manufacturer %>
-  </p>
+  <div class="card-body ">
+     <p>
+      <strong>Name:</strong>
+      <%= console.name %>
+    </p>
+     <p>
+        <strong>Manufacturer:</strong>
+        <%= console.manufacturer %>
+    </p>
+    <p>
+        <strong>Colour:</strong>
+        <%= console.colour %>
+    </p>
 
-  <p>
-    <strong>Colour:</strong>
-    <%= console.colour %>
-  </p>
+    <p>
+        <strong>Price:</strong>
+        <%= console.price %>
+    </p>
 
-  <p>
-    <strong>Price:</strong>
-    <%= console.price %>
-  </p>
-
-  <p>
-    <strong>Status:</strong>
-    <%= console.status %>
-  </p>
-
-  <p>
-    <strong>Stock:</strong>
-    <%= console.stock %>
-  </p>
+     <p>
+        <strong>Status:</strong>
+        <%= console.status %>
+    </p>
+    <p>
+        <strong>Stock:</strong>
+        <%= console.stock %>
+    </p>
+    
+     <%= link_to "Show this console", console, class: 'btn btn-primary' %>
+  </div>
 
 </div>

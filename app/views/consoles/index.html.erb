@@ -2,13 +2,12 @@
 
 <h1>Consoles</h1>
 
-<div id="consoles">
+<div id="consoles" class="" >
+<%= link_to "New console", new_console_path %>
   <% @consoles.each do |console| %>
     <%= render console %>
-    <p>
-      <%= link_to "Show this console", console %>
-    </p>
+  
   <% end %>
 </div>
 
-<%= link_to "New console", new_console_path %>
+

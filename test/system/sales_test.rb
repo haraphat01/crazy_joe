@@ -14,7 +14,7 @@ class SalesTest < ApplicationSystemTestCase
     visit sales_url
     click_on "New sale"
 
-    fill_in "Copies", with: @sale.copies
+    fill_in "Copy", with: @sale.copy
     fill_in "Customer", with: @sale.customer_id
     fill_in "Date", with: @sale.date
     fill_in "Game", with: @sale.game_id
@@ -29,7 +29,7 @@ class SalesTest < ApplicationSystemTestCase
     visit sale_url(@sale)
     click_on "Edit this sale", match: :first
 
-    fill_in "Copies", with: @sale.copies
+    fill_in "Copy", with: @sale.copy
     fill_in "Customer", with: @sale.customer_id
     fill_in "Date", with: @sale.date
     fill_in "Game", with: @sale.game_id

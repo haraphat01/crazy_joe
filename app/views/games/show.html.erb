@@ -2,9 +2,10 @@
 
 <%= render @game %>
 
-<div>
-  <%= link_to "Edit this game", edit_game_path(@game) %> |
-  <%= link_to "Back to games", games_path %>
-
-  <%= button_to "Destroy this game", @game, method: :delete %>
+<div class="mt-3">
+  
+  <%= link_to "Edit to games", edit_game_path(@game), class: 'btn btn-secondary' %>
+  |
+   <%= link_to "Back to games", games_path, class: 'btn btn-secondary' %>
+   <%= button_to "Destroy this game", @game, class: 'btn btn-danger mt-3',method: :delete %>
 </div>
