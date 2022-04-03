@@ -3,16 +3,35 @@
 <h1>Customers</h1>
 
 <div id="customers">
-  <% @customers.each do |customer| %>
-   
+ 
+<table class="table table-stripe ">
+  <thead class="thead-dark">
     <tr>
-    <h3><%= customer.customer_name %></h3>
-    <h3><%= customer.store_name %></h3>
-    <h3><%= customer.address %></h3>
-    <h3><%= customer.phone %></h3>
-    <hr>
-</tr>
+      
+      <th>Customer</th>
+      <th>Copy</th>
+      <th>Game</th>
+      <th>Date</th>
+    
+      
+    </tr>
+  </thead>
+  <tbody>
+  <% @customers.each do |customer| %>
+    <tr>
+    
+      <td><%= customer.customer_name %></td>
+      <td><%= customer.store_name %></td>
+      <td> <%= customer.address %></td>
+      <td> <%= customer.phone %></td>
+    
+    </tr>
   <% end %>
+  </tbody>
+</table>
+
+
 </div>
 
 <%= link_to "New customer", new_customer_path %>
+

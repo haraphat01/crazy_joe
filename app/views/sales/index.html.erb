@@ -3,12 +3,34 @@
 <h1>Sales</h1>
 
 <div id="sales">
+  
+<%= link_to "New sale", new_sale_path %>
+
+  <table class="table table-stripe ">
+  <thead class="thead-dark">
+    <tr>
+      
+      <th>Customer</th>
+      <th>Copy</th>
+      <th>Game</th>
+      <th>Date</th>
+      <th>Margin</th>
+      
+    </tr>
+  </thead>
+  <tbody>
   <% @sales.each do |sale| %>
-    <%= render sale %>
-    <p>
-      <%= link_to "Show this sale", sale %>
-    </p>
+    <tr>
+    
+      <td><%= sale.customer_id %></td>
+      <td><%= sale.copy %></td>
+      <td> <%= sale.game_id %></td>
+      <td> <%= sale.date %></td>
+      <td><%= sale.margin %></td>
+    </tr>
   <% end %>
+  </tbody>
+</table>
 </div>
 
-<%= link_to "New sale", new_sale_path %>
+
