@@ -3,6 +3,6 @@ class Game < ApplicationRecord
     
     has_one_attached :image
     belongs_to :customer
-    belongs_to :sale
+    has_many :sales
     
 end
