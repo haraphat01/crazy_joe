@@ -2,12 +2,38 @@
 
 <h1>Consoles</h1>
 
-<div id="consoles" class="" >
-<%= link_to "New console", new_console_path %>
+<div id="consoles" >
+
+
+  <table class="table table-stripe font">
+  <thead class="thead-dark ">
+    <tr>
+      
+      <th>Name</th>
+      <th>Manufacturer</th>
+      <th>Colour</th>
+      <th>Price</th>
+      <th>Status</th>
+      <th>Stock</th>
+    
+      
+    </tr>
+  </thead>
+  <tbody>
   <% @consoles.each do |console| %>
-    <%= render console %>
-  
+    <tr>
+    
+      <td>  <%= console.name %></td>
+      <td>  <%= console.manufacturer %></td>
+      <td>  <%= console.colour %></td>
+      <td> <%= console.price %></td>
+      <td>    <%= console.status %></td>
+      <td>  <%= console.stock %></td>
+    
+    </tr>
   <% end %>
+  </tbody>
+</table>
 </div>
 
 
