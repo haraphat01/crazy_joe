@@ -11,6 +11,7 @@ This project development was achieved using the following technologies:
 
 
 ## Live Demo
+N/A
 
 
 
@@ -42,4 +43,4 @@ To get a local copy up and running follow these simple example steps.
 - Github: [@haraphat01](https://github.com/haraphat01)
 
 * ...
-# crazy_joe
+# crazy_joe App
