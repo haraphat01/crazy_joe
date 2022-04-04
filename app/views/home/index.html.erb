@@ -1,7 +1,19 @@
-<h1>Home#index</h1>
-<p>Joe Best Five</p>
- <% @top.each do |t| %> 
-   
-   <p><%= "Customer #{Customer.name}  #{t.copy} copies." %></p>
-<%end%>
+<div class="homepage ">  
+  <h1>Home#index</h1>
+  
+  
+    <div class="text-center mt-5 pt-5">
+    <h1>Joe Best Five</h1>
+       <% @top.each do |t| %> 
 
+
+  
+         <p><%= "#{t.name}" %></p>
+          <%end%>
+    </div>
+  
+     
+</div>
+  
+
+ 

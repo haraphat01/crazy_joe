@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
   def index
-   @top =  [*Sale.all]
+   @top =  Game.select('name').joins(:sales).distinct
    
    
   
